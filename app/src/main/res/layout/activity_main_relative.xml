@@ -1,44 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
+
+        android:id="@+id/textViewSelamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat"
         android:textSize="24sp"/>
+
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Satya Pratama"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#91B83E"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:layout_below="@id/textViewSelamat"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/android_logo"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp" />
+        android:layout_centerInParent="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Anda sudah menjadi seorang"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:layout_above="@id/textViewAndroidDev"
+        android:layout_alignParentEnd="true"
+        />
     <TextView
+        android:id="@+id/textViewAndroidDev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Android Developer"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#91B83E" />
+        android:textColor="#91B83E"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
 
-</LinearLayout>
+</RelativeLayout>
